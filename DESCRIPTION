@@ -1,11 +1,26 @@
 Package: FloodPulseRNew
-Title: What the Package Does (One Line, Title Case)
+Title: FloodPulseR: Sentinel-1 Flood Tool
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: A Shiny app for processing Sentinel-1 imagery using Google Earth Engine.
+Authors@R: person(
+    given = "Mark",
+    family = "Lelaono",
+    email = "marklelaono933@gmail.com",
+    role = c("aut", "cre"))
+Imports:
+    shiny,
+    sf,
+    terra,
+    leaflet,
+    leaflet.extras,
+    rgee,
+    utils,
+    googleCloudStorageR,
+    googledrive,
+    geojsonio,
+    jsonlite
+Suggests:
+    leaflet.providers
+License: MIT + file LICENSE
 Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
